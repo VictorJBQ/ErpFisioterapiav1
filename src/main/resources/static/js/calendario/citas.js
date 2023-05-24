@@ -603,7 +603,7 @@ contentType: "application/json; charset=utf-8",
 
 success: function(json) {
 
-$("#msg").text('Se asigno la cita correctamente');
+$("#msg").text('Se asignó la cita correctamente');
 
 $("#msg").show();
 
@@ -645,7 +645,7 @@ contentType: "application/json; charset=utf-8",
 
 success: function(json) {
 
-$("#msg").text('Se asigno la cita correctamente');
+$("#msg").text('Se asignó la cita correctamente');
 
 $("#msg").show();
 
