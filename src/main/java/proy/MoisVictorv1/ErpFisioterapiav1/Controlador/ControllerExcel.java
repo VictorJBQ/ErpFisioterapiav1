@@ -303,7 +303,14 @@ public class ControllerExcel {
      	   for(Pacientes a1 : aa) {
      		  Integer t= a1.getTelefono();
      		  String tel = t.toString();
-     		   lista.add(new ExcelPacientesForm(a1.getNombre(), a1.getApellidos(),a1.getDni(),a1.getFechaAlta().toString(),a1.getDomicilio(),a1.getCodigoPostal(),a1.getPoblacion(),tel,a1.getSabeDeMi(),a1.getTarifas().getTipo()));
+ String tipoTarifa= "";
+     		  
+     		  if(a1.getTarifas()==null) {
+     			  tipoTarifa="NA";
+     		  }else{
+     			  tipoTarifa=a1.getTarifas().getTipo();
+     		  }
+     		   lista.add(new ExcelPacientesForm(a1.getNombre(), a1.getApellidos(),a1.getDni(),a1.getFechaAlta().toString(),a1.getDomicilio(),a1.getCodigoPostal(),a1.getPoblacion(),tel,a1.getSabeDeMi(),tipoTarifa));
      	   }
         DescargaExcel descargaExcel = new DescargaExcel();
  	descargaExcel.descargarExcel(response, lista,nombre);
@@ -320,7 +327,14 @@ public class ControllerExcel {
      	   for(Pacientes a1 : aa) {
      		  Integer t= a1.getTelefono();
      		  String tel = t.toString();
-     		   lista.add(new ExcelPacientesForm(a1.getNombre(), a1.getApellidos(),a1.getDni(),a1.getFechaAlta().toString(),a1.getDomicilio(),a1.getCodigoPostal(),a1.getPoblacion(),tel,a1.getSabeDeMi(),a1.getTarifas().getTipo()));
+ String tipoTarifa= "";
+     		  
+     		  if(a1.getTarifas()==null) {
+     			  tipoTarifa="NA";
+     		  }else{
+     			  tipoTarifa=a1.getTarifas().getTipo();
+     		  }
+     		   lista.add(new ExcelPacientesForm(a1.getNombre(), a1.getApellidos(),a1.getDni(),a1.getFechaAlta().toString(),a1.getDomicilio(),a1.getCodigoPostal(),a1.getPoblacion(),tel,a1.getSabeDeMi(),tipoTarifa));
      	   }
         DescargaExcel descargaExcel = new DescargaExcel();
  	descargaExcel.descargarExcel(response, lista,nombre);
@@ -338,7 +352,14 @@ public class ControllerExcel {
      	   for(Pacientes a1 : aa) {
      		  Integer t= a1.getTelefono();
      		  String tel = t.toString();
-     		   lista.add(new ExcelPacientesForm(a1.getNombre(), a1.getApellidos(),a1.getDni(),a1.getFechaAlta().toString(),a1.getDomicilio(),a1.getCodigoPostal(),a1.getPoblacion(),tel,a1.getSabeDeMi(),a1.getTarifas().getTipo()));
+ String tipoTarifa= "";
+     		  
+     		  if(a1.getTarifas()==null) {
+     			  tipoTarifa="NA";
+     		  }else{
+     			  tipoTarifa=a1.getTarifas().getTipo();
+     		  }
+     		   lista.add(new ExcelPacientesForm(a1.getNombre(), a1.getApellidos(),a1.getDni(),a1.getFechaAlta().toString(),a1.getDomicilio(),a1.getCodigoPostal(),a1.getPoblacion(),tel,a1.getSabeDeMi(),tipoTarifa));
      	   }
         DescargaExcel descargaExcel = new DescargaExcel();
  	descargaExcel.descargarExcel(response, lista,nombre);
